@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:6.0
 import PackageDescription
 
 let package = Package(
@@ -10,7 +10,7 @@ let package = Package(
             targets: ["GFMarkdown"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-cmark.git", branch: "gfm"),
+        .package(url: "https://github.com/apple/swift-cmark.git", from: "0.5.0"),
     ],
     targets: [
         .target(

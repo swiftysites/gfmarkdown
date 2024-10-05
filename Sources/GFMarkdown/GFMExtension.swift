@@ -1,5 +1,5 @@
 /// GFM extensions.
-public enum GFMExtension: String {
+public enum GFMExtension: String, Sendable {
 
     /// Spec [here](https://github.github.com/gfm/#tables-extension-)
     case table

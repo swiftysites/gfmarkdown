@@ -1,5 +1,7 @@
-#if canImport(Glibc)
-    import Glibc
+#if canImport(Darwin)
+import Darwin
+#elseif canImport(Glibc)
+import Glibc
 #endif
 
 import CMarkGFMPlus
@@ -15,7 +17,7 @@ import CMarkGFMPlus
 /// print(markdown.description) // "# Hello"
 /// ```
 ///
-public struct MarkdownString {
+public struct MarkdownString: Sendable {
 
     /// Default CMark options: ``CMarkOption/githubPreLang``, ``CMarkOption/tablePreferStyleAttributes``.
     public static let defaultOptions: [CMarkOption] = [

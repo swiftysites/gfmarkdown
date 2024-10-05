@@ -11,7 +11,7 @@ import CMarkGFMPlus
 ///
 /// ``normalize``, ``validateUTF8``, ``smart``, ``githubPreLang``, ``liberalHTMLTag``, ``footnotes``, ``strikethroughDoubleTilde``, ``tablePreferStyleAttributes``, ``fullInfoString``.
 ///
-public enum CMarkOption {
+public enum CMarkOption: Sendable {
 
     /// Include a `data-sourcepos` attribute on all block elements.
     case sourcePos
